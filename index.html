@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our First Date</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="sky"></canvas>
+<div class="hearts-field" id="heartsField"></div>
+<div class="glow-orb glow-orb--one"></div>
+<div class="glow-orb glow-orb--two"></div>
+<div class="shimmer"></div>
+
+<main id="countdownScreen" class="screen countdown-screen">
+  <div class="content">
+    <div class="eyebrow">
+      <span class="eyebrow-heart">&#10084;</span>
+      <span>our first date</span>
+      <span class="eyebrow-heart">&#10084;</span>
+    </div>
+
+    <h1 class="title">Our First Date</h1>
+
+    <p class="date-stamp">23 <span class="dot">&bull;</span> 09 <span class="dot">&bull;</span> 2026</p>
+
+    <p class="prelude">Until the day we finally meet&hellip;</p>
+
+    <div class="countdown" id="countdown" aria-live="polite">
+      <div class="unit">
+        <span class="value" id="days">00</span>
+        <span class="label">days</span>
+      </div>
+      <span class="sep">:</span>
+      <div class="unit">
+        <span class="value" id="hours">00</span>
+        <span class="label">hours</span>
+      </div>
+      <span class="sep">:</span>
+      <div class="unit">
+        <span class="value" id="minutes">00</span>
+        <span class="label">minutes</span>
+      </div>
+      <span class="sep">:</span>
+      <div class="unit">
+        <span class="value" id="seconds">00</span>
+        <span class="label">seconds</span>
+      </div>
+    </div>
+
+    <div class="approach-wrap" id="approachWrap">
+      <div class="approach-track" id="approachTrack">
+        <div class="approach-rail"></div>
+        <div class="approach-fill" id="approachFill"></div>
+        <div class="approach-avatar approach-avatar--firas" id="firasAvatar">
+          <span class="avatar-glow"></span>
+          <span class="avatar-emoji">&#128102;</span>
+        </div>
+        <div class="approach-avatar approach-avatar--amira" id="amiraAvatar">
+          <span class="avatar-glow"></span>
+          <span class="avatar-emoji">&#128103;</span>
+        </div>
+      </div>
+      <div class="approach-names">
+        <span class="approach-name approach-name--firas">Firas</span>
+        <span class="approach-name approach-name--amira">Amira</span>
+      </div>
+      <p class="union-line" id="unionLine">Firas <span class="heart-inline">&#10084;</span> Amira</p>
+    </div>
+
+    <p class="whisper">Every second is bringing us closer.</p>
+  </div>
+</main>
+
+<section id="revealScreen" class="screen reveal-screen" hidden>
+  <div class="reveal-glow"></div>
+  <div class="content">
+    <p class="reveal-line reveal-line--1">Today is the day. <span class="heart-inline">&#10084;</span></p>
+    <p class="reveal-line reveal-line--2">No more counting the days&hellip;</p>
+    <p class="reveal-line reveal-line--3">It&rsquo;s finally time for our first date.</p>
+
+    <button id="surpriseBtn" class="surprise-btn" hidden>
+      <span>Open your surprise</span>
+      <span class="heart-inline">&#10084;</span>
+    </button>
+  </div>
+</section>
+
+<section id="letterScreen" class="screen letter-screen" hidden>
+  <div class="content letter-content">
+    <span class="letter-mark">&#10084;</span>
+    <p class="letter-line">Somehow, all those messages, calls, and little moments brought us here.</p>
+    <p class="letter-line letter-line--gold">23 September 2026 &mdash; the beginning of our first real memory together. <span class="heart-inline">&#10084;</span></p>
+    <p class="letter-signature">Written quietly, kept just for you.</p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
